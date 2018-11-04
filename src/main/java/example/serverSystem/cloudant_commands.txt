@@ -1,0 +1,23 @@
+	//Show all user DataBases created
+    //        System.out.println(client.getAllDbs());
+
+    // 2.  Creating/Deleting a database within the service instance.
+    //		client.createDB("teste");
+    //		client.deleteDB("teste");
+
+    // Pass thru DataBases
+    //		Collection clientList = client.getAllDbs();
+    //        for (Object element : clientList) {
+    //            System.out.println(element);
+    //        }
+
+		System.out.println(getDB().toString());
+		System.out.println(getDB().getAllDocsRequestBuilder());
+		System.out.println(getDB().listIndices());
+
+
+		        System.out.println(client.getGson());
+        //		System.out.println(getDB().post(oneWs));
+        //		System.out.println(getDB().save(oneWs));
+        //        System.out.println(getDB().update(oneWs));
+

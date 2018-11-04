@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!--<parent>-->
+        <!--<groupId>net.wasdev.maven.parent</groupId>-->
+        <!--<artifactId>java7-parent</artifactId>-->
+        <!--<version>1.4</version>-->
+        <!--<relativePath></relativePath>-->
+    <!--</parent>-->
+
+    <!--<parent>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-starter-parent</artifactId>-->
+        <!--<version>1.5.0.RELEASE</version>-->
+    <!--</parent>-->
+
+    <groupId>wsi</groupId>
+    <artifactId>wsis</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+    <name>WeatherStation Server System - WSIS - Servlet</name>
+
+    <repositories>
+        <!--<repository>-->
+            <!--<id>liberty-starter-maven-repo</id>-->
+            <!--<name>liberty-starter-maven-repo</name>-->
+            <!--<url>http://liberty-starter.wasdev.developer.ibm.com/start/api/v1/repo</url>-->
+        <!--</repository>-->
+    </repositories>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.0.0</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                        <warName>wsis</warName>
+                        <warSourceDirectory>WebContent</warSourceDirectory>
+                    </configuration>
+                </plugin>
+                <!--<plugin>-->
+                    <!--<groupId>net.wasdev.wlp.maven.plugins</groupId>-->
+                    <!--<artifactId>liberty-maven-plugin</artifactId>-->
+                    <!--<version>1.2.1</version>-->
+                <!--</plugin>-->
+                <!--<plugin>-->
+                    <!--<groupId>net.wasdev.wlp.maven.plugins</groupId>-->
+                    <!--<artifactId>liberty-maven-plugin</artifactId>-->
+                    <!--<configuration>-->
+                        <!--<configFile>src/main/wlp/server.xml</configFile>-->
+                        <!--<bootstrapProperties>-->
+                            <!--<appLocation>../../../../../${project.build.finalName}</appLocation>-->
+                        <!--</bootstrapProperties>-->
+                    <!--</configuration>-->
+                <!--</plugin>-->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>1.4.1</version>
+                    <configuration>
+                        <rules>
+                            <dependencyConvergence/>
+                        </rules>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.1</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>1.6.0</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>java</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <!--<mainClass>example.serverSystem.WeatherStationController</mainClass>-->
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+
+
+
+    </build>
+
+
+    <dependencies>
+        <!--spring-boot-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-jersey</artifactId>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-undertow</artifactId>-->
+        <!--</dependency>-->
+        <!--spring-boot-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-rs-client</artifactId>
+            <version>3.1.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+            <version>1.0.4</version>
+            <scope>test</scope>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>net.wasdev.wlp.starters.rest</groupId>-->
+            <!--<artifactId>provided-pom</artifactId>-->
+            <!--<version>0.0.3</version>-->
+            <!--<type>pom</type>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>net.wasdev.wlp.starters.web</groupId>-->
+            <!--<artifactId>provided-pom</artifactId>-->
+            <!--<version>0.0.3</version>-->
+            <!--<type>pom</type>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>net.wasdev.wlp.starters.rest</groupId>-->
+            <!--<artifactId>runtime-pom</artifactId>-->
+            <!--<version>0.0.3</version>-->
+            <!--<type>pom</type>-->
+            <!--<scope>runtime</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>net.wasdev.wlp.starters.web</groupId>-->
+            <!--<artifactId>runtime-pom</artifactId>-->
+            <!--<version>0.0.3</version>-->
+            <!--<type>pom</type>-->
+            <!--<scope>runtime</scope>-->
+        <!--</dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.2.6</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-mapper-asl -->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudant</groupId>
+            <artifactId>cloudant-client</artifactId>
+            <version>2.12.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.paho/org.eclipse.paho.client.mqttv3 -->
+        <dependency>
+            <groupId>org.eclipse.paho</groupId>
+            <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>com.sun.jersey</groupId>-->
+            <!--<artifactId>jersey-server</artifactId>-->
+            <!--<version>1.7</version>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
+            <!--&lt;!&ndash;<groupId>com.sun.jersey</groupId>&ndash;&gt;-->
+            <!--&lt;!&ndash;<artifactId>jersey-json</artifactId>&ndash;&gt;-->
+            <!--&lt;!&ndash;<version>1.8</version>&ndash;&gt;-->
+        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
+
+        <!--<dependency>-->
+            <!--<groupId>com.sun.jersey</groupId>-->
+            <!--<artifactId>jersey-client</artifactId>-->
+            <!--<version>1.7</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-server</artifactId>
+            <version>2.20</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet</artifactId>
+            <version>2.20</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.9.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+
+
+    </dependencies>
+</project>

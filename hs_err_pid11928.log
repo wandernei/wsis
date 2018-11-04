@@ -1,0 +1,125 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (virtualspace.cpp:125), pid=11928, tid=11556
+#  fatal error: os::release_memory failed
+#
+# JRE version:  (7.0_80-b15) (build )
+# Java VM: Java HotSpot(TM) Client VM (24.80-b11 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00b4d800):  JavaThread "Unknown thread" [_thread_in_vm, id=11556, stack(0x008e0000,0x00930000)]
+
+Stack: [0x008e0000,0x00930000],  sp=0x0092f664,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x192384]
+V  [jvm.dll+0x18b9f6]
+V  [jvm.dll+0x1678ec]
+V  [jvm.dll+0x167dab]
+V  [jvm.dll+0x8ad36]
+V  [jvm.dll+0x88776]
+V  [jvm.dll+0x8748e]
+V  [jvm.dll+0x919d3]
+V  [jvm.dll+0x141324]
+V  [jvm.dll+0x163e1c]
+V  [jvm.dll+0xcaaaf]
+C  [java.exe+0x13c1]
+C  [java.exe+0x1e33]
+C  [java.exe+0xa6c1]
+C  [java.exe+0xa74b]
+C  [KERNEL32.DLL+0x18f04]
+C  [ntdll.dll+0x69c23]
+C  [ntdll.dll+0x69bf2]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00b4d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=11556, stack(0x008e0000,0x00930000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x01120000 - 0x0114f000 	C:\Program Files\Java\jdk1.7.0_80\bin\java.exe
+0x774b0000 - 0x77636000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x74e90000 - 0x74f26000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x740a0000 - 0x74247000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x72a90000 - 0x72b22000 	C:\WINDOWS\system32\apphelp.dll
+0x769d0000 - 0x76a47000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x751a0000 - 0x7525e000 	C:\WINDOWS\System32\msvcrt.dll
+0x74f30000 - 0x74f71000 	C:\WINDOWS\System32\sechost.dll
+0x76a80000 - 0x76b43000 	C:\WINDOWS\System32\RPCRT4.dll
+0x76880000 - 0x769c9000 	C:\WINDOWS\System32\USER32.dll
+0x744c0000 - 0x744d9000 	C:\WINDOWS\System32\win32u.dll
+0x76a50000 - 0x76a7b000 	C:\WINDOWS\System32\GDI32.dll
+0x74360000 - 0x744b9000 	C:\WINDOWS\System32\gdi32full.dll
+0x6cd40000 - 0x6cf4a000 	C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.14393.953_none_89c2555adb023171\COMCTL32.dll
+0x76dd0000 - 0x76fe1000 	C:\WINDOWS\System32\combase.dll
+0x74a50000 - 0x74b30000 	C:\WINDOWS\System32\ucrtbase.dll
+0x74040000 - 0x7409a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x74e50000 - 0x74e76000 	C:\WINDOWS\System32\IMM32.DLL
+0x54d40000 - 0x54dff000 	C:\Program Files\Java\jdk1.7.0_80\jre\bin\msvcr100.dll
+0x50d70000 - 0x510fb000 	C:\Program Files\Java\jdk1.7.0_80\jre\bin\client\jvm.dll
+0x74de0000 - 0x74de6000 	C:\WINDOWS\System32\PSAPI.DLL
+0x72540000 - 0x72564000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x66dd0000 - 0x66dd8000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x75430000 - 0x75493000 	C:\WINDOWS\System32\WS2_32.dll
+0x008b0000 - 0x008d3000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x74320000 - 0x74356000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x6eff0000 - 0x6effc000 	C:\Program Files\Java\jdk1.7.0_80\jre\bin\verify.dll
+0x6ea00000 - 0x6ea21000 	C:\Program Files\Java\jdk1.7.0_80\jre\bin\java.dll
+0x6ebd0000 - 0x6ebf0000 	C:\Program Files\Java\jdk1.7.0_80\jre\bin\instrument.dll
+0x6e6d0000 - 0x6e6e3000 	C:\Program Files\Java\jdk1.7.0_80\jre\bin\zip.dll
+0x69ae0000 - 0x69c25000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dmaven.multiModuleProjectDirectory=C:\projects.all\Iot\example-ss-master -Xms256m -Xmx512m -Dmaven.home=C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.4\plugins\maven\lib\maven3 -Dclassworlds.conf=C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.4\plugins\maven\lib\maven3\bin\m2.conf -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.4\lib\idea_rt.jar=7378:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.4\bin -Dfile.encoding=UTF-8
+java_command: org.codehaus.classworlds.Launcher -Didea.version=2018.2.4 mvn liberty:run-server
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\PROGRAM FILES\Java\jdk1.8.0_172
+CLASSPATH=LASSPATH;JUNIT_HOME\junit4.10.jar;.;;C:\JUNIT\junit4.10.jar;.;;C:\JUNIT\junit4.10.jar;.;
+USERNAME=JUNIOR
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 Build 9600 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 3577068k(615444k free), swap 7771372k(11408k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.80-b11) for windows-x86 JRE (1.7.0_80-b15), built on Apr 10 2015 13:33:35 by "java_re" with unknown MS VC++:1600
+
+time: Sun Oct 21 21:53:01 2018
+elapsed time: 0 seconds
+
