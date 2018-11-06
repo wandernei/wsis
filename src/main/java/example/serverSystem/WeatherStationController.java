@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
 
-
 public class WeatherStationController {
 	//region vars
 	private static CloudantClient cloudant = null;
@@ -116,7 +115,7 @@ public class WeatherStationController {
 
 
 	public WeatherStationDriver controlStation(int stationId, boolean irrigate, String configuration) throws IOException {
-		WeatherStationDriver ws1 = this.createStation(stationId);
+		WeatherStationDriver ws1 = createStation(stationId);
 		//       JsonObject ws1message = this.ws("22", "2018-10-13T00:43:53.807Z", "15", "0", "0");
 		ws1 = new WeatherStationDriver(stationId, irrigate, configuration);
 		System.out.println("resposta ws1: " + ws1.msg.getMessage());
@@ -183,13 +182,13 @@ public class WeatherStationController {
 		return false;
 	}
 
-    public static void main(String[] args) throws IOException {
-        WeatherStationController one = new WeatherStationController();
-
-        one.createStation(22);
-
-        one.controlStation(22,true,"55");
-
-    }
+//    public static void main(String[] args) throws IOException {
+////        WeatherStationController one = new WeatherStationController();
+//
+////        one.createStation(11);
+//
+////        one.controlStation(11,true,"55");
+//
+//    }
 
 }

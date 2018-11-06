@@ -57,6 +57,42 @@ public class wsMqttMessage implements MqttCallback {
         }
     }
 
+    public void receive(String ip, int port) {
+        MemoryPersistence persistence = new MemoryPersistence();
+        String s = persistence.toString();
+        String broker = "tcp://"+ip+":"+Integer.toString(port);
+        String clientId = broker + " Sending";
+
+        try {
+            MqttClient client = new MqttClient(broker, clientId, persistence);
+            MqttConnectOptions connOpts = new MqttConnectOptions();
+            connOpts.setCleanSession(true);
+
+            client.connect(connOpts);
+            client.setCallback(new MqttCallback() {
+                public void connectionLost(Throwable cause) {
+                }
+
+                @Override
+                public void messageArrived(String topic, MqttMessage mqttMessage) {
+//                    mqttMessages.add(mqttMessage);
+                    mqttMessageReceived = mqttMessage;
+//                    System.out.println("-------------------------------------------------");
+//                    System.out.println("| Topic:" + topic);
+//                    System.out.println("| Message: " + new String(mqttMessage.getPayload()));
+//                    System.out.println("-------------------------------------------------");
+                }
+
+                public void deliveryComplete(IMqttDeliveryToken token) {}
+            });
+            client.subscribe("getData",2); //RECEBER
+
+            Thread.sleep(1000);
+        } catch (MqttException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Override
     public void connectionLost(Throwable cause) {
         System.out.println("Conexao perdida favor reconectar.");

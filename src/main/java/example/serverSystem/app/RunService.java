@@ -1,6 +1,6 @@
 package example.serverSystem.app;
 
-import example.serverSystem.WeatherStationController;
+//import example.serverSystem.WeatherStationController;
 import org.glassfish.jersey.server.ResourceConfig;
 
 import java.io.IOException;

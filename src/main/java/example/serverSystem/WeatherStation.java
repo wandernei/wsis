@@ -2,7 +2,6 @@ package example.serverSystem;
 
 import com.google.gson.*;
 import com.google.gson.annotations.SerializedName;
-import jackson.*;
 
 public class WeatherStation {
     //region vars
@@ -81,6 +80,10 @@ public class WeatherStation {
         this.setConfiguration(configuration);
     }
 
+    public WeatherStation(int stationId) {
+        this.setStationId(stationId);
+    }
+
     public WeatherStation setWeatherStation(String ws) {
         Gson gson = new GsonBuilder().serializeNulls().create();
         WeatherStation w = gson.fromJson(ws, WeatherStation.class);
@@ -116,23 +119,23 @@ public class WeatherStation {
         return wsJsonObject;
     }
 
-    public JsonObject getWeatherStation() {
-        JSONParser parser = new JSONParser();
-        JSONObject json = (JSONObject) parser.parse(this.toString());
-
+    public JsonObject getWeatherStation(){
+        Gson gson = new Gson();
+        String wsString = gson.toJson(this, WeatherStation.class);
+        JsonObject wsJsonObject = gson.fromJson(wsString, JsonObject.class);
         return wsJsonObject;
     }
 
     @Override
     public String toString() {
         return "{" +
-                "stationId=" + stationId +
-                ", dateTime='" + dateTime + '\'' +
-                ", temp=" + temp +
-                ", humidity=" + humidity +
-                ", irrigate=" + irrigate +
-                ", configuration='" + configuration + '\'' +
-                '}';
+                "\"stationId\"" + ":" + "\"" +stationId + "\"" +
+                ", \"dateTime\""+ ":" + "\"" + dateTime + "\"" +
+                ", \"temp\"" + ":" +  "\"" +temp + "\"" +
+                ", \"humidity\"" + ":" + "\"" + humidity + "\"" +
+                ", \"irrigate\"" + ":" +  "\"" +irrigate + "\"" +
+                ", \"configuration\""+ ":" + "\"" + configuration + "\"" +
+                "}";
     }
 
 }
