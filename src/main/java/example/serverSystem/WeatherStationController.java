@@ -107,7 +107,7 @@ public class WeatherStationController {
 	public WeatherStationDriver createStation(int stationId) throws IOException {
 //		new WeatherStationController();
 //      JsonObject ws1message = this.ws("22", "2018-10-13T00:43:53.807Z", "15", "0", "0");
-		WeatherStationDriver ws1 = new WeatherStationDriver(stationId, false, "");
+		WeatherStationDriver ws1 = new WeatherStationDriver(stationId);
 		System.out.println("resposta ws1: " + ws1.msg.getMessage());
 
 		return ws1;
@@ -158,8 +158,63 @@ public class WeatherStationController {
         }
 
 		System.out.println(getDB().search(ws_saved_id));
-        /*		*/
+
 		return ws1;
+	}
+
+	public WeatherStation getWs() throws IOException {
+        WeatherStationDriver ws1 = new WeatherStationDriver();
+        System.out.println("resposta ws1: " + ws1.msg.getMessage());
+
+        return ws1.ws;
+    }
+
+	public void reconfigure(){
+//        WeatherStationDriver ws1 = createStation(stationId);
+//        //       JsonObject ws1message = this.ws("22", "2018-10-13T00:43:53.807Z", "15", "0", "0");
+//        ws1 = new WeatherStationDriver(stationId, irrigate, configuration);
+//        System.out.println("resposta ws1: " + ws1.msg.getMessage());
+//
+//        JsonObject ws1message = ws1.ws.getWeatherStation();
+//
+//        // Create an instance of the database
+//        Database teste2 = client.database(databaseName, true);
+//        teste2.post(ws1message);
+//        Response ws_saved = teste2.save(ws1message);
+//        teste2.ensureFullCommit();
+//
+//        String ws_saved_id = ws_saved.getId();
+//        String ws_saved_rev = ws_saved.getRev();
+//
+//        ws1message.addProperty("_id",ws_saved_id );
+//        ws1message.addProperty("_rev",ws_saved_rev );
+//        teste2.update(ws1message);
+//
+//
+//        AllDocsRequest allDocsRequest = getDB().getAllDocsRequestBuilder().includeDocs(true).build();
+//        List<JsonObject> listaTeste = getDB().getAllDocsRequestBuilder().includeDocs(true).build().getResponse().getDocsAs(JsonObject.class);
+////        for (JsonObject ws : listaTeste) {
+////            System.out.println(ws.toString());
+////        }
+//
+//        ArrayList<String> keys =new ArrayList<>() ;
+//        int keysSize = keys.size();
+//
+//        keys.add(ws_saved_id);
+////        keys.add("2");
+//
+//        List<Object> allDocsByKeys = getDB().getAllDocsRequestBuilder()
+//                .includeDocs(true)
+//                .keys(keys.toArray(new String[keysSize]))
+//                .build().getResponse().getDocsAs(Object.class);
+//
+//        for (Object allDocsByKey : allDocsByKeys) {
+//            System.out.println(allDocsByKey.toString());
+//        }
+//
+//        System.out.println(getDB().search(ws_saved_id));
+//
+//        return reconfigured;
 	}
 
 	public void showAllData() {

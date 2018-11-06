@@ -80,9 +80,16 @@ public class WeatherStation {
         this.setConfiguration(configuration);
     }
 
+    public WeatherStation(int stationId, boolean irrigate) {
+        this.setStationId(stationId);
+        this.doIrrigate(irrigate);
+    }
+
     public WeatherStation(int stationId) {
         this.setStationId(stationId);
     }
+
+    public WeatherStation() {}
 
     public WeatherStation setWeatherStation(String ws) {
         Gson gson = new GsonBuilder().serializeNulls().create();

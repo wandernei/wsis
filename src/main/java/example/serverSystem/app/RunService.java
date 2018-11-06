@@ -10,6 +10,9 @@ public class RunService extends ResourceConfig {
 //        String[] args = {""};
 //        WeatherStationController.main(args);
 
+        ListenChanges t1 = new ListenChanges( "Thread-1");
+        t1.start();
+
         // Define the package which contains the service classes.
         packages("example.serverSystem.services");
     }

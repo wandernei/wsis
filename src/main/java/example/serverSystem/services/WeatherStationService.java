@@ -7,7 +7,6 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
-import java.util.concurrent.ThreadLocalRandom;
 
 @Path("/estacao")
 public class WeatherStationService {
@@ -55,21 +54,24 @@ public class WeatherStationService {
 //    }
 
 	@GET
+    @Path("/{stationId}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String getWeatherStation() throws IOException {
-            this.weatherStation = new WeatherStationDriver(11); //inicia o hardware ws p enviar receber(caso n esteja iniciado)
+	public String getWeatherStation(@PathParam("stationId") String stId) throws IOException {
+        System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2");
+	    this.weatherStation = new WeatherStationDriver(); //inicia o hardware ws p enviar receber(caso n esteja iniciado)
+//            this.weatherStation = new WeatherStationDriver(Integer.parseInt(stId)); //inicia o hardware ws p enviar receber(caso n esteja iniciado)
             WeatherStation result = this.weatherStation.ws; //pega os resultados da ws
             return result.toString(); // envia com toString formatado p JSON
     }
 
-    @POST
-    @Path("/post")
+    @GET
+    @Path("/{stationId}/irrigate/{irrigate}")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response irrigate(WeatherStation ws) throws IOException {
-        this.weatherStation = new WeatherStationDriver(ws.getStationId(), ws.isIrrigating(), ws.getConfiguration()); //inicia o hardware ws p enviar receber(caso n esteja iniciado)
+    public Response irrigate(@PathParam("stationId") String stId, @PathParam("irrigate") String irr) throws IOException {
+        this.weatherStation = new WeatherStationDriver(Integer.parseInt(stId), Boolean.parseBoolean(irr)); //atualiza o comando irrigar
         WeatherStation result = this.weatherStation.ws; //pega os resultados da ws
 
-        String res = "WeatherStation saved : " + ws;
+        String res = "WeatherStation saved : \n" + result.toString();
         return Response.status(201).entity(res).build();
     }
 
