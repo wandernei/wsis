@@ -1,20 +1,18 @@
 package example.serverSystem;
 
-import com.google.gson.JsonObject;
-
-import example.wsMqttMessage;
-
 import java.io.IOException;
 
 public class WeatherStationDriver {
 //region vars
 	public WeatherStation ws;
-	public wsMqttMessage msg;
+	public WsMqttMessage msg;
 	private String messageResponse;
 //endregion
 
+	public int getWsId(){ return this.ws.getStationId(); }
+
 	public WeatherStationDriver(int stationId, boolean irrigate, String configuration) throws IOException {
-        this.msg = new wsMqttMessage();
+        this.msg = new WsMqttMessage();
         // quando cria Ws manda stationId para Ws comecar a enviar dados
         this.ws = new WeatherStation(stationId, irrigate, configuration);
 
@@ -24,7 +22,7 @@ public class WeatherStationDriver {
 	}
 
 	public WeatherStationDriver(int stationId, boolean irrigate) throws IOException {
-		this.msg = new wsMqttMessage();
+		this.msg = new WsMqttMessage();
 		// quando cria Ws manda stationId para Ws comecar a enviar dados
 		this.ws = new WeatherStation(stationId, irrigate);
 
@@ -34,7 +32,7 @@ public class WeatherStationDriver {
 	}
 
 	public WeatherStationDriver(int stationId) throws IOException {
-		this.msg = new wsMqttMessage();
+		this.msg = new WsMqttMessage();
 		// quando cria Ws manda stationId para Ws comecar a enviar dados
 		this.ws = new WeatherStation(stationId);
 
@@ -45,7 +43,7 @@ public class WeatherStationDriver {
 
 
     public WeatherStationDriver() throws IOException {
-        this.msg = new wsMqttMessage();
+        this.msg = new WsMqttMessage();
         // quando cria Ws manda stationId para Ws comecar a enviar dados
         this.ws = new WeatherStation();
 

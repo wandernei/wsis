@@ -2,6 +2,7 @@ package example.serverSystem.services;
 
 import example.serverSystem.WeatherStation;
 import example.serverSystem.WeatherStationDriver;
+import example.serverSystem.WsMqttMessage;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -54,24 +55,36 @@ public class WeatherStationService {
 //    }
 
 	@GET
-    @Path("/{stationId}")
+//    @Path("/{stationId}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String getWeatherStation(@PathParam("stationId") String stId) throws IOException {
-        System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2");
+	public String getWeatherStation() throws IOException { // @PathParam("stationId") String stId
 	    this.weatherStation = new WeatherStationDriver(); //inicia o hardware ws p enviar receber(caso n esteja iniciado)
 //            this.weatherStation = new WeatherStationDriver(Integer.parseInt(stId)); //inicia o hardware ws p enviar receber(caso n esteja iniciado)
-            WeatherStation result = this.weatherStation.ws; //pega os resultados da ws
-            return result.toString(); // envia com toString formatado p JSON
-    }
+        WeatherStation result = this.weatherStation.ws; //pega os resultados da ws
+        return result.toString(); // envia com toString formatado p JSON
+}
 
     @GET
-    @Path("/{stationId}/irrigate/{irrigate}")
+    @Path("/irrigate/{irrigate}")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response irrigate(@PathParam("stationId") String stId, @PathParam("irrigate") String irr) throws IOException {
-        this.weatherStation = new WeatherStationDriver(Integer.parseInt(stId), Boolean.parseBoolean(irr)); //atualiza o comando irrigar
+    public Response irrigate(@PathParam("irrigate") String irr) throws IOException {
+        int wsId = new WeatherStationDriver().ws.getStationId();
+
+	    this.weatherStation = new WeatherStationDriver(wsId, Boolean.parseBoolean(irr)); //atualiza o comando irrigar
         WeatherStation result = this.weatherStation.ws; //pega os resultados da ws
 
         String res = "WeatherStation saved : \n" + result.toString();
+        return Response.status(201).entity(res).build();
+    }
+
+    @GET
+    @Path("/setId/{stationId}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response setId(@PathParam("stationId") String sId) throws IOException {
+        this.weatherStation = new WeatherStationDriver( Integer.parseInt(sId) ); //atualiza o comando irrigar
+        WeatherStation result = this.weatherStation.ws; //pega os resultados da ws
+
+        String res = "WeatherStation id changed : \n" + result.toString();
         return Response.status(201).entity(res).build();
     }
 

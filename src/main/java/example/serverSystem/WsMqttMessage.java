@@ -1,11 +1,11 @@
-package example;
+package example.serverSystem;
 
 import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 import java.util.ArrayList;
 
-public class wsMqttMessage implements MqttCallback {
+public class WsMqttMessage implements MqttCallback {
 //region vars
     private static ArrayList<MqttMessage> mqttMessages;
     private static MqttMessage mqttMessageReceived;
@@ -15,7 +15,7 @@ public class wsMqttMessage implements MqttCallback {
 //        //String msg="{\"stationId\":33,\"temp\":17,\"humidity\":26,\"irrigate\":0}";
 //        String msg = "{\"stationId\":11,\"irrigate\":1}";
 //
-//        new wsMqttMessage().transceive(msg);
+//        new WsMqttMessage().transceive(msg);
 //    }
 
     public void transceive(String msg, String ip, int port) {

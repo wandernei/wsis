@@ -111,7 +111,7 @@ public class WeatherStation {
     "dateTime": "2018-10-13T00:43:53.807Z",
     "temp": "20",
     "humidity": "80",
-    "irrigate": "0"
+    "irrigate": "true"
 } */
         this.stationId = Integer.parseInt(stationId);
         this.dateTime = dateTime;

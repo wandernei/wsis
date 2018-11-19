@@ -15,6 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/JavaCloudantApp$wsis.ic" NAME="wsis Coverage Results" MODIFIED="1542295599244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/JavaCloudantApp$JavaCloudantAppWAR.ic" NAME="JavaCloudantAppWAR Coverage Results" MODIFIED="1541038007736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="DatabaseView">
@@ -86,10 +87,11 @@
     <session id="970403553">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.109" value="1" />
+          <entry key="project.open.time.109" value="2" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.147" value="1" />
           <entry key="project.open.time.154" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.19" value="1" />
@@ -101,47 +103,50 @@
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.46" value="2" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.55" value="1" />
-          <entry key="project.open.time.62" value="2" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.62" value="3" />
           <entry key="project.open.time.63" value="1" />
-          <entry key="project.open.time.66" value="1" />
+          <entry key="project.open.time.66" value="2" />
           <entry key="project.open.time.78" value="2" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="11" />
+          <entry key="class" value="15" />
           <entry key="html" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="107" />
-          <entry key="xml" value="13" />
+          <entry key="java" value="144" />
+          <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="11" />
+          <entry key="CLASS" value="15" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="107" />
-          <entry key="XML" value="13" />
+          <entry key="JAVA" value="144" />
+          <entry key="XML" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="11" />
-          <entry key="java" value="2787" />
+          <entry key="dummy" value="46" />
+          <entry key="java" value="3594" />
           <entry key="txt" value="22" />
           <entry key="xml" value="239" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2787" />
-          <entry key="PLAIN_TEXT" value="33" />
+          <entry key="JAVA" value="3594" />
+          <entry key="PLAIN_TEXT" value="68" />
           <entry key="XML" value="239" />
         </counts>
       </usages-collector>
@@ -149,50 +154,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
-              <folding>
-                <element signature="n#!!doc;n#cloudant#0;n#WeatherStationController#0" />
-                <element signature="method#initClient#0;class#WeatherStationController#0" />
-                <element signature="method#createClient#0;class#WeatherStationController#0" />
-                <element signature="e#4779#4891#0" />
-                <element signature="method#getDB#0;class#WeatherStationController#0" />
-                <element signature="method#WeatherStationController1#0;class#WeatherStationController1#0" />
-                <element signature="e#6777#6812#0" />
-                <element signature="method#controlStation#0;class#WeatherStationController#0" />
-                <element signature="method#showAllData#0;class#WeatherStationController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/services/WeatherStationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+            <state relative-caret-position="230">
+              <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationDriver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="n#!!doc;n#weatherStation#0;n#WeatherStationService#0" />
-                <element signature="e#456#466#0" />
-                <element signature="e#704#744#0" />
+                <element signature="n#!!doc;n#ws#0;n#WeatherStationDriver#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStation.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/WsMqttMessage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="2914">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
               <folding>
-                <element signature="n#!!doc;n#stationId#0;n#WeatherStation#0" />
-                <element signature="n#!!doc;n#setStationId#0;n#WeatherStation#0" />
-                <element signature="e#1904#1905#0" expanded="true" />
-                <element signature="e#1948#1949#0" expanded="true" />
+                <element signature="e#355#401#0" />
               </folding>
             </state>
           </provider>
@@ -201,24 +190,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/app/ListenChanges.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="1240">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
-                <element signature="method#ListenChanges#0;class#ListenChanges#0" />
-                <element signature="method#start#0;class#RunnableDemo#0" />
+                <element signature="method#start#0;class#ListenChanges#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationDriver.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-              <folding>
-                <element signature="n#!!doc;n#ws#0;n#WeatherStationDriver#0" />
-              </folding>
+            <state relative-caret-position="3100">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
             </state>
           </provider>
         </entry>
@@ -259,13 +244,17 @@
       <find>controls</find>
       <find>createClient</find>
       <find>WeatherStationDriver</find>
+      <find>wsMqttMessage</find>
+      <find>qtt</find>
     </findStrings>
     <replaceStrings>
       <replace>\</replace>
       <replace>\&quot;</replace>
+      <replace>WsMqttMessage</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\projects.all\Iot\wsis-ss-master</dir>
+      <dir>C:\projects.all\Iot\wsis-ss-master\src\main\java\example</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -293,11 +282,12 @@
         <option value="$PROJECT_DIR$/src/main/java/example/wsMqttMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/example/serverSystem/app/RunnableDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/example/serverSystem/app/RunService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/example/serverSystem/app/ListenChanges.java" />
-        <option value="$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationDriver.java" />
         <option value="$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStation.java" />
         <option value="$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/serverSystem/WsMqttMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationDriver.java" />
         <option value="$PROJECT_DIR$/src/main/java/example/serverSystem/services/WeatherStationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/example/serverSystem/app/ListenChanges.java" />
       </list>
     </option>
   </component>
@@ -357,8 +347,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -418,10 +408,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="wea&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/java/example/serverSystem/WeatherStation.java&#10;serv&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/wlp/server.xml&#10;web.xml&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/webapp/WEB-INF/web.xml&#10;pom.xml&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/pom.xml&#10;weatherst&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/java/example/serverSystem/services/WeatherStationService.java&#10;server&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/wlp/server.xml&#10;myserv&#9;PSI&#9;JAVA://wsis.MyServletContextListener" />
+    <property name="SearchEverywhereHistoryKey" value="pom.xml&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/pom.xml&#10;weatherstationdriver&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/java/example/serverSystem/WeatherStationDriver.java&#10;Weatherstation.&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/java/example/serverSystem/WeatherStation.java&#10;wea&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/java/example/serverSystem/WeatherStation.java&#10;serv&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/wlp/server.xml&#10;web.xml&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/webapp/WEB-INF/web.xml&#10;weatherst&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/java/example/serverSystem/services/WeatherStationService.java&#10;server&#9;FILE&#9;file://C:/projects.all/Iot/wsis-ss-master/src/main/wlp/server.xml&#10;myserv&#9;PSI&#9;JAVA://wsis.MyServletContextListener" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541537787630" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542671357653" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -747,12 +737,20 @@
       <workItem from="1541427706243" duration="5013000" />
       <workItem from="1541508691618" duration="6000" />
       <workItem from="1541508813007" duration="2063000" />
-      <workItem from="1541513573411" duration="15850000" />
+      <workItem from="1541513573411" duration="18630000" />
+      <workItem from="1541801571779" duration="5830000" />
+      <workItem from="1542044618193" duration="2089000" />
+      <workItem from="1542120494481" duration="1189000" />
+      <workItem from="1542213432409" duration="12050000" />
+      <workItem from="1542324015404" duration="6797000" />
+      <workItem from="1542377462445" duration="559000" />
+      <workItem from="1542394513037" duration="3138000" />
+      <workItem from="1542668012103" duration="1442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161307000" />
+    <option name="totallyTimeSpent" value="197181000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -764,9 +762,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23958333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23958333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -779,18 +778,18 @@
       <window_info id="Bean Validation" order="10" weight="0.19196428" />
       <window_info id="Maven Projects" order="11" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32718122" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.7802013" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3557047" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32673267" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.37128714" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28712872" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32885906" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2147651" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.21452145" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.36241612" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32885906" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.2533557" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.25247526" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32718122" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -945,18 +944,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationController.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationController.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationController.java</url>
           <line>117</line>
           <properties />
           <option name="timeStamp" value="119" />
@@ -975,27 +962,39 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationDriver.java</url>
-          <line>30</line>
+          <line>28</line>
           <properties />
           <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationDriver.java</url>
-          <line>31</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/example/serverSystem/WsMqttMessage.java</url>
+          <line>103</line>
+          <properties />
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/example/serverSystem/services/WeatherStationService.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/example/serverSystem/services/WeatherStationService.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="154" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/example/serverSystem/services/WeatherStationService.java</url>
           <line>73</line>
           <properties />
-          <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/example/serverSystem/services/WeatherStationService.java</url>
-          <line>71</line>
-          <properties />
-          <option name="timeStamp" value="136" />
+          <option name="timeStamp" value="155" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1029,41 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/model/ResourceMethodInvoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="390" selection-start-line="390" selection-end-line="390" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/ServerRuntime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="320" selection-start-line="320" selection-end-line="320" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.20/jersey-common-2.20-sources.jar!/org/glassfish/jersey/process/internal/RequestScope.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="319" selection-start-line="319" selection-end-line="319" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/model/internal/JavaResourceMethodDispatcherProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="210" selection-start-line="210" selection-end-line="210" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="99" />
         </state>
       </provider>
     </entry>
@@ -1112,26 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="163" selection-start-line="163" selection-end-line="163" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/example/wsMqttMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="n#!!doc;n#mqttMessages#0;n#wsMqttMessage#0" />
-            <element signature="method#receive#0;class#wsMqttMessage#0" />
-            <element signature="method#connectionLost#0;class#wsMqttMessage#0" />
-            <element signature="method#deliveryComplete#0;class#wsMqttMessage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/hk2/hk2-locator/2.4.0-b27/hk2-locator-2.4.0-b27-sources.jar!/org/jvnet/hk2/internal/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -1143,9 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
           <caret line="1039" selection-start-line="1039" selection-end-line="1039" />
-          <folding>
-            <element signature="e#38458#38459#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1163,37 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/ApplicationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="352" selection-start-line="352" selection-end-line="352" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.20/jersey-container-servlet-core-2.20.jar!/org/glassfish/jersey/servlet/WebComponent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="156" selection-start-line="156" selection-end-line="156" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.20/jersey-common-2.20-sources.jar!/org/glassfish/jersey/internal/Errors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="254" selection-start-line="254" selection-end-line="254" />
-          <folding>
-            <element signature="e#9814#9815#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.20/jersey-container-servlet-core-2.20.jar!/org/glassfish/jersey/servlet/ServletContainer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/hk2/hk2-utils/2.4.0-b27/hk2-utils-2.4.0-b27-sources.jar!/org/glassfish/hk2/utilities/reflection/ReflectionHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -1201,81 +1111,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/app/RunService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/app/ListenChanges.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="method#ListenChanges#0;class#ListenChanges#0" />
-            <element signature="method#start#0;class#RunnableDemo#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-          <folding>
-            <element signature="n#!!doc;n#ws#0;n#WeatherStationDriver#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="n#!!doc;n#stationId#0;n#WeatherStation#0" />
-            <element signature="n#!!doc;n#setStationId#0;n#WeatherStation#0" />
-            <element signature="e#1904#1905#0" expanded="true" />
-            <element signature="e#1948#1949#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="158">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+        <state relative-caret-position="279">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="n#!!doc;n#cloudant#0;n#WeatherStationController#0" />
             <element signature="method#initClient#0;class#WeatherStationController#0" />
             <element signature="method#createClient#0;class#WeatherStationController#0" />
             <element signature="e#4779#4891#0" />
             <element signature="method#getDB#0;class#WeatherStationController#0" />
-            <element signature="method#WeatherStationController1#0;class#WeatherStationController1#0" />
             <element signature="e#6777#6812#0" />
-            <element signature="method#controlStation#0;class#WeatherStationController#0" />
             <element signature="method#showAllData#0;class#WeatherStationController#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/model/internal/JavaResourceMethodDispatcherProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="210" selection-start-line="210" selection-end-line="210" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.20/jersey-common-2.20-sources.jar!/org/glassfish/jersey/internal/Errors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="274" selection-start-line="274" selection-end-line="274" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/ServerRuntime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="324" selection-start-line="324" selection-end-line="324" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/ApplicationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="1139" selection-start-line="1139" selection-end-line="1139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.20/jersey-container-servlet-core-2.20.jar!/org/glassfish/jersey/servlet/WebComponent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/model/ResourceMethodInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="346" selection-start-line="346" selection-end-line="346" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.20/jersey-common-2.20-sources.jar!/org/glassfish/jersey/process/internal/RequestScope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="321" selection-start-line="321" selection-end-line="321" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.20/jersey-container-servlet-core-2.20.jar!/org/glassfish/jersey/servlet/ServletContainer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.20/jersey-server-2.20-sources.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/sched.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-700">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/services/WeatherStationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+        <state relative-caret-position="230">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/WeatherStationDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="n#!!doc;n#weatherStation#0;n#WeatherStationService#0" />
-            <element signature="e#456#466#0" />
-            <element signature="e#704#744#0" />
+            <element signature="n#!!doc;n#ws#0;n#WeatherStationDriver#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/WsMqttMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2914">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+          <folding>
+            <element signature="e#355#401#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/example/serverSystem/app/ListenChanges.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1240">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="method#start#0;class#ListenChanges#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3100">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
         </state>
       </provider>
     </entry>

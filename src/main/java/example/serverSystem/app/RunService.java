@@ -7,6 +7,7 @@ import java.io.IOException;
 
 public class RunService extends ResourceConfig {
     public RunService() throws IOException {
+        System.setProperty("https.protocols", "TLSv1,TLSv1.1,TLSv1.2");
 //        String[] args = {""};
 //        WeatherStationController.main(args);
 
